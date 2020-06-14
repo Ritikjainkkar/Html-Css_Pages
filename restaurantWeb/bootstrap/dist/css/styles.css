@@ -2,9 +2,10 @@ body {
   font-size: 20px;
   color: #fff;
   background-color: #61122f;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Lora' ,serif;
 }
-#header-nav{
+#nav-header{
+	background-color: #f6b319;
 	border-radius: 2px;
 	height: auto;
 }
@@ -14,6 +15,9 @@ body {
 }
 .navbar-brand{
 	margin-top: 0px;
+}
+.navbar-collapse{
+	vertical-align: center;
 }
 .navbar-brand h1{
 	font-family: 'Lora' ,serif;
@@ -38,4 +42,59 @@ body {
 .navbar-brand p span{
 	vertical-align: bottom;
 	margin-left: 10px;
+}
+.navbar-toggler{
+	background-color: white;
+}
+#nav-list{
+	margin-top: 10px;
+}
+#nav-list li{
+	margin: 6px;
+}
+#nav-list a{
+	color: #557c3e;
+	text-align: center;
+}
+#collapsable-nav{
+	position: relative;
+	margin-left: 40%;
+}
+.fa-info-circle{
+	border-image-width: 7px;
+	size:7px;
+}
+.fa-award{
+	size: 12px;
+}
+ button.navbar-toggler , .navbar-toggler-icon, .icon-bar{
+	border:1px solid white;
+}
+@media (min-width: 1200px){
+	#phone{
+		margin-left:0px;
+	}
+	#navbarToggleExternalContent{
+		position: relative;
+		margin-left: 41%;
+	}
+}
+@media (min-width:  992px) and (max-width: 1199px){
+	#phone{
+		margin-left: 0px;
+	}
+	#navbarToggleExternalContent{
+		margin-left: 30%;
+	}
+}
+@media (max-width: 767px){
+	.d-none{
+		display: none !important;
+	}
+	.fas ,.fa , .fa-lg{
+		margin-right:.555em;
+	}
+	.fa-utensils:before , .fa-info-circle:before , .fa-award:before{
+		font-size: 0.99em;
+	}
 }
