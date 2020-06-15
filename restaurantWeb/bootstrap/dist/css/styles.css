@@ -72,7 +72,7 @@ body {
 }
 @media (min-width: 1200px){
 	.container .jumbotron {
-    background:url('C:/Users/Ritik/module2-solution/restaurantWeb/bootstrap/jumbotron_1200.jpg') no-repeat;
+    background:url('../../jumbotron_1200.jpg') no-repeat;
     margin-top: 10px;
     background-size: cover;
     padding: 0px;
@@ -88,7 +88,7 @@ body {
 }
 @media (min-width:  992px) and (max-width: 1199px){
 	.container .jumbotron {
-    background: url('C:/Users/Ritik/module2-solution/restaurantWeb/bootstrap/jumbotron_992.jpg') no-repeat;
+    background: url('../../jumbotron_992.jpg') no-repeat;
     padding: 0px;
     height: 558px;
   }
@@ -101,14 +101,14 @@ body {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .container .jumbotron {
-    background: url('C:/Users/Ritik/module2-solution/restaurantWeb/bootstrap/jumbotron_768.jpg') no-repeat;
+    background: url('../../jumbotron_768.jpg') no-repeat;
     height: 432px;
     margin-top: 10px;
   }
 }
 @media (max-width: 767px){
 	.container .jumbotron {
-    background: url('C:/Users/Ritik/module2-solution/restaurantWeb/bootstrap/jumbotron_768.jpg') no-repeat;
+    background: url('../../jumbotron_768.jpg') no-repeat;
     height: 432px;
     margin-top: 10px;
   }
