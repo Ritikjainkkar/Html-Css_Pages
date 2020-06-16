@@ -1,13 +1,13 @@
+											/*************************** HEADER *************************/
+
 body {
   font-size: 20px;
-  color: #fff;
+  color: #f6b319;
   background-color: #61122f;
   font-family: 'Lora' ,serif;
 }
 #nav-header{
 	background-color: #f6b319;
-	border-radius: 2px;
-	height: auto;
 }
 .navbar-header a img{
 	vertical-align: top;
@@ -67,9 +67,48 @@ body {
 .fa-award{
 	size: 12px;
 }
- button.navbar-toggler , .navbar-toggler-icon, .icon-bar{
+											/*************************** HOME PAGE *************************/
+ 	button.navbar-toggler , .navbar-toggler-icon, .icon-bar{
 	border:1px solid white;
-}
+	}
+	#home-tiles{
+		margin-top: 6px;
+	}
+	#menu-tile , #specials-tile , #map-tile{
+		height: 250px;
+		border: 1px solid #5D0101 ;
+		width: 100%;
+		position: relative;
+		margin-bottom: 15px;
+		overflow: hidden;
+	}
+	#menu-tile:hover , #specials-tile:hover , #map-tile:hover{
+		box-shadow: 0px 1px 5px 1px #cccccc;
+	}
+	#menu-tile{
+		border-radius:4px;
+		background: url('menu-tile.jpg') no-repeat;
+		background-position: center;
+	}
+	#specials-tile{
+		border-radius:4px;
+		background: url('specials-tile.jpg') no-repeat;
+		background-position: center;
+	}
+	#menu-tile span , #specials-tile span, #map-tile span{
+		position: absolute;
+		width: 100%;
+		bottom:0;
+		right: 0;
+		background-color: #000;
+		color: #fff;
+		font-family: 'Metal Mania', cursive;
+		font-size: 1.15em;
+		text-align: center;
+		text-transform: uppercase;
+		opacity: .85;
+	}
+											/*************************** MEDIA QUERY *************************/
 @media (min-width: 1200px){
 	.container .jumbotron {
     background:url('../../jumbotron_1200.jpg') no-repeat;
@@ -107,6 +146,10 @@ body {
   }
 }
 @media (max-width: 767px){
+	#menu-tile, #specials-tile {
+    width: auto;
+    margin: 0 auto 15px;
+  	}
 	.container .jumbotron {
     background: url('../../jumbotron_768.jpg') no-repeat;
     height: 432px;
@@ -121,4 +164,10 @@ body {
 	.fa-utensils:before , .fa-info-circle:before , .fa-award:before{
 		font-size: 0.99em;
 	}
+} 	
+@media (max-width: 576px) {
+  #menu-tile, #specials-tile {
+    width: 300px;
+    margin: 0 auto 15px;
+  }
 }
