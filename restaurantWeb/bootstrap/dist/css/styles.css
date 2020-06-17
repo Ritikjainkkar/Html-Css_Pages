@@ -108,6 +108,39 @@ body {
 		text-transform: uppercase;
 		opacity: .85;
 	}
+	.cards-footer{
+		margin-top: 25px;
+		padding-top: 15px;
+		padding-bottom:6px;
+		border-bottom: 0;
+		background-color: #222;
+		opacity: .78;
+	}
+	#Hour>span,#Address>span{
+		font-size: 1.2em;
+		color:white;
+	}
+	#Hour,#Address{
+		font-size:0.8em;
+		color:white;
+		margin-top: 12px;
+	}
+	.text-center{
+		color: white;
+		font-size:0.8em;
+		font-style: italic; 
+	}
+	hr {
+	  border: 0;
+	  clear:both;
+	  display:block;
+	  background-color:white;
+	  height: 1px;
+	  width: 50%;
+	  margin-top: 15px;
+	  margin-bottom: 0px;
+	}
+
 											/*************************** MEDIA QUERY *************************/
 @media (min-width: 1200px){
 	.container .jumbotron {
@@ -124,6 +157,9 @@ body {
 		position: relative;
 		margin-left: 41%;
 	}
+	.d-xm-block{
+		display: none !important;
+	}
 }
 @media (min-width:  992px) and (max-width: 1199px){
 	.container .jumbotron {
@@ -137,6 +173,9 @@ body {
 	#navbarToggleExternalContent{
 		margin-left: 30%;
 	}
+	.d-xm-block{
+		display: none !important;
+	}
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .container .jumbotron {
@@ -144,8 +183,11 @@ body {
     height: 432px;
     margin-top: 10px;
   }
+  .d-xm-block{
+		display: none !important;
+	}
 }
-@media (max-width: 767px){
+@media (min-width:577px) and (max-width: 767px){
 	#menu-tile, #specials-tile {
     width: auto;
     margin: 0 auto 15px;
@@ -164,10 +206,25 @@ body {
 	.fa-utensils:before , .fa-info-circle:before , .fa-award:before{
 		font-size: 0.99em;
 	}
+	.d-xm-block{
+		display: none !important;
+	}
 } 	
 @media (max-width: 576px) {
+	.container .jumbotron {
+    background: url('../../jumbotron_768.jpg') no-repeat;
+    height: 432px;
+    margin-top: 10px;
+  }
   #menu-tile, #specials-tile {
     width: 300px;
     margin: 0 auto 15px;
   }
+  .d-xm-block{
+		display: block;
+	}
+  .cards-footer section{
+		text-align: center;
+		font-size: 1em;
+	}
 }
